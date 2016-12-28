@@ -78,10 +78,11 @@ for key, value in decoded_config.iteritems():
 		
 		response = db.put()
 		print response.json
-
-
+	
+	
 #Provide all the static css and js files under the static dir to browser
 @route('/static/:filename#.*#')
+
 def server_static(filename):
 	""" This is for JS files """
 	return static_file(filename, root='static')
@@ -113,7 +114,6 @@ def getCurrentPrice(item):
 		price = soup.find(id=item["idToCheck"]).string	
 		
 		if price is not None:
-			
 			d = db.document(item["url"])
 			resp = d.merge({ 'url': item["url"], 'price': price})
 			
