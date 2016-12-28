@@ -53,7 +53,7 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/"><em>Fabulous Price Finder </em><small>v2.0</small></a>
+          <a class="brand pull-left" href="/"><em>Fabulous Price Finder prueba de cambio </em><small>v2.0</small></a>
 	  
           <div class="nav-collapse collapse">
            
